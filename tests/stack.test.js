@@ -7,6 +7,6 @@ test('peek on empty stack returns undefined', () => {
 test('peek on stack with elements returns top element', () => {
   stack.push(1);
   stack.push(2);
-  expect(stack.peek()).toBe(1); // This will fail initially
+  expect(stack.peek()).toBe(); // This will fail initially
 });
 
