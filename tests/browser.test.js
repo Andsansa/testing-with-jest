@@ -36,6 +36,6 @@ describe('Clicking "Pusha till stacken"', () => {
 });
 
 check('Check for Peek button', async () => {
-  const peekButton = await driver.findElement(By.id('peek-button'));
-  expect(await peekButton.isDisplayed()).toBe(true); 
+  const peekButton = await driver.findElement(By.id('peek'));
+  expect(await peekButton.isDisplayed()).toBe(true);
 });
