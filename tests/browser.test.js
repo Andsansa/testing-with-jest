@@ -35,7 +35,7 @@ describe('Clicking "Pusha till stacken"', () => {
     });
 });
 
-test('"Popping" button should exist', async () => {
+test('"Poppa stacken!" button should exist', async () => {
     const popButton = await driver.findElement(By.id('pop'));
-    expect(await popButton.getText()).toEqual("Popping");
+    expect(await popButton.getText()).toEqual("Poppa stacken!");
 });
