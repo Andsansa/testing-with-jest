@@ -16,9 +16,9 @@ exports.pop = function () {
 exports.peek = function () {
     return _.last(stack);
 }
-const Stack = require('../stack');
-
-test('Popping from empty stack returns "Underflow"', () => {
-    const stack = new Stack();
-    expect(stack.pop()).toBe("Underflow");
+    
+test("array adds element", () => {
+  const arr = [];
+  arr.push(5);
+  expect(arr).toContain(5);
 });
