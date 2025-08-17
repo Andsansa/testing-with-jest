@@ -16,4 +16,9 @@ exports.pop = function () {
 exports.peek = function () {
     return _.last(stack);
 }
-expect(stack.pop()).toBe("annat");
+const Stack = require('../stack');
+
+test('Popping from empty stack returns "Underflow"', () => {
+    const stack = new Stack();
+    expect(stack.pop()).toBe("Underflow");
+});
